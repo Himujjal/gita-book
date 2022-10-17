@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta charset="UTF-8" />
+    <title>Gita - My insights</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"
+    />
+    <style>
+      .sidebar,
+      .sidebar-toggle,
+      body,
+      input[type="search"] {
+        background-color: #171717;
+        color: #bbb;
+      }
+      body {
+        font-size: medium;
+        font-size-adjust: 0.52;
+      }
+	  .sidebar .sidebar-nav {
+		  padding: 1rem;
+	  }
+	  /*
+      .sidebar strong {
+        color: #ffffff;
+      }
+      .sidebar {
+        width: auto;
+      }
+      .sidebar .sidebar-nav li {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 1.6em;
+      }
+      .sidebar .sidebar-nav > ul > li {
+        margin-top: 12px;
+      }
+	  */
+      .markdown-section tr:nth-child(2n) {
+        background-color: #171717;
+      }
+      .markdown-section {
+        max-width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">Please wait...</div>
+    <script>
+      window.$docsify = {
+        name: "Gita - My teachings",
+        repo: "https://github.com/Himujjal/gita-book",
+        loadSidebar: true,
+        alias: {
+          //"/.*/_sidebar.md": "/_sidebar.md",
+          "/*/_sidebar.md": "/etc/_sidebar.md",
+        },
+        subMaxLevel: 3,
+        sidebarDisplayLevel: 1,
+        search: "auto",
+        themeColor: "#f7a31d",
+        homepage: "index.md",
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-js.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"
+    />
+  </body>
+</html>
